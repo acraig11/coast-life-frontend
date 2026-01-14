@@ -84,7 +84,7 @@ export default function ChatWidget() {
     // 2) gemini fallback
     setIsSending(true);
     try {
-      const res = await fetch("https://gemini-proxy.zinadog99.workers.dev/api/chat", {
+      const res = await fetch("/api/chat", {
         method: "POST",
         headers: { "content-type": "application/json" },
         body: JSON.stringify({
